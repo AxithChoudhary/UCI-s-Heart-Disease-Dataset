@@ -1,4 +1,10 @@
+'''
+Utils.py contains all utility functions
+used during the inference process
+'''
+
 import pandas as pd
+import numpy as np
 from constants import *
 from sklearn import preprocessing
 
@@ -12,10 +18,9 @@ def get_inference_data():
     Example usage: inference_data, labels = get_inference_data()
     '''
 
-    data = pd.read_csv("\Data\inference_heart_disease.csv")
+    data = pd.read_csv("Data\inference_heart_disease.csv")
     data.drop_duplicates(subset=None, inplace=True)
     data.duplicated().any()
-
     return data[data.columns.drop('target')], data['target']
 
 

@@ -1,3 +1,12 @@
+'''
+constants.py contains all variables
+where constant values are assigned
+'''
+
+ORIGINAL_FEATURES = ['age', 'sex', 'chest_pain_type', 'resting_bp', 'cholestoral',
+       'fasting_blood_sugar', 'restecg', 'max_hr', 'exang', 'oldpeak', 'slope',
+       'num_major_vessels', 'thal']
+
 FEATURE_TO_ENCODE = ['thal', 'slope', 'chest_pain_type', 'restecg']
 
 ONE_HOT_ENCODED_FEATURES = ['age', 'sex', 'resting_bp', 'cholestoral',
